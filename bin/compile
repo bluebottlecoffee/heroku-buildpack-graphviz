@@ -65,5 +65,8 @@ PATH=/app/graphviz/bin:$PATH
 export GRAPHVIZ_DOT=/app/graphviz/bin/dot
 EOF
 
+
+echo "PATH=\"/app/graphviz/bin:$PATH\"" > "$1"/export
+
 echo "Graphviz binaries in /app/graphviz/bin and added to PATH" | a
 echo
